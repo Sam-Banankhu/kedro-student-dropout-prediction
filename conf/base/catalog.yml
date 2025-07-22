@@ -1,0 +1,26 @@
+primary_school_data:
+  type: pandas.CSVDataset  # Note lowercase 's' in Dataset
+  filepath: data/01_raw/Mali_primary_school2.csv
+  load_args:
+    encoding: utf-8
+    sep: ","
+
+preprocessed_student_data:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/preprocessed_student_data.parquet
+
+X_features:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/X_features.pkl
+
+y_target:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/y_target.pkl
+
+label_encoders:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/label_encoders.pkl
+
+feature_columns:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/feature_columns.pkl
