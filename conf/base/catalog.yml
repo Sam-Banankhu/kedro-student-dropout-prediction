@@ -59,3 +59,37 @@ processed_prediction_data:
 student_predictions:
   type: pandas.ParquetDataset
   filepath: data/03_primary/student_predictions.parquet
+
+
+
+features:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/features.pkl
+
+model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/model.pkl
+
+predictions:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/student_predictions.parquet
+
+explanations:
+  type: pandas.ParquetDataset
+  filepath: data/08_reporting/explanations.parquet
+
+sample_size:
+  type: json.JSONDataset
+  filepath: data/01_raw/sample_size.json
+
+feature_names:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/feature_columns.pkl
+
+validation_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/validation_metrics.json
+
+# report_dir:
+#   type: partitioned.ParquetDataSet
+#   path: data/09_reporting/report_dir/

@@ -1,6 +1,3 @@
-Here's a comprehensive `README.md` template for your Kedro Student Dropout Prediction project. Create this file in your project root directory:
-
-```markdown
 # Student Dropout Prediction Pipeline
 
 ![Kedro](https://img.shields.io/badge/kedro-0.19.14-blue)
@@ -203,4 +200,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 Project Maintainer - [Samson Banannkhu Mhango](mailto:sambanankhumhango@gmail..com)
-```
