@@ -36,6 +36,7 @@ parse==1.20.2
 platformdirs==4.3.8
 pluggy==1.6.0
 pre_commit_hooks==5.0.0
+pyarrow==21.0.0
 Pygments==2.19.2
 pyproject_hooks==1.2.0
 python-dateutil==2.9.0.post0

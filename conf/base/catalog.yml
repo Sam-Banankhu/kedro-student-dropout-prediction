@@ -24,3 +24,23 @@ label_encoders:
 feature_columns:
   type: pickle.PickleDataset
   filepath: data/02_intermediate/feature_columns.pkl
+
+trained_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/model.pkl
+
+feature_scaler:
+  type: pickle.PickleDataset
+  filepath: data/06_models/scaler.pkl
+
+test_features:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/X_test.pkl
+
+test_targets:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/y_test.pkl
+
+model_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/model_metrics.json
