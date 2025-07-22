@@ -44,3 +44,18 @@ test_targets:
 model_metrics:
   type: json.JSONDataset
   filepath: data/08_reporting/model_metrics.json
+
+
+new_student_data:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/new_students.csv
+  load_args:
+    encoding: 'utf-8'
+
+processed_prediction_data:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/processed_prediction_data.parquet
+
+student_predictions:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/student_predictions.parquet
