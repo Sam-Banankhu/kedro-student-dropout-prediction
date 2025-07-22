@@ -30,13 +30,13 @@ def create_pipeline(**kwargs):
             ),
             node(
                 func=explain_predictions,
-                inputs=["validated_predictions"],
+                inputs=['model', 'features', 'feature_names', 'sample_size'],
                 outputs="explanation_reports",
                 name="explain_predictions_node",
             ),
             node(
                 func=generate_prediction_report,
-                inputs=["explanation_reports"],
+                inputs=['predictions', 'validation_metrics', 'explanations', 'report_dir'],
                 outputs="prediction_reports",
                 name="generate_prediction_report_node",
             )

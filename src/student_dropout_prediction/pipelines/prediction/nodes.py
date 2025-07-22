@@ -4,7 +4,7 @@ import pandas as pd
 import logging
 from typing import Dict, Any, List, Tuple
 
-from sklearn.base import accuracy_score
+from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score, precision_score, recall_score, roc_auc_score
 from matplotlib import pyplot as plt
 import shap
